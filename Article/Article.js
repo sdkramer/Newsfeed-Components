@@ -147,6 +147,13 @@ artDiv.classList.add('article');
 artDiv.classList.add('date');
 expandButton.classList.add('expandButton');
 
+/*set text content*/
+artTitle.textContent = title;
+artDate.textContent = date;
+p1.textContent = firstParagraph;
+p2.textContent = secondParagraph;
+p3.textContent = thirdParagraph;
+
 
 
 
