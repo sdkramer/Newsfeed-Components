@@ -125,12 +125,24 @@ function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdPar
   const artDiv = document.createElement('div');
   const artTitle = document.createElement('h2');
   const artDate = document.createElement('p');
+  const pContent = document.createElement('div');
   const p1 = document.createElement('p');
   const p2 = document.createElement('p');
   const p3 = document.createElement('p');
+  const expandButton = document.createElement('span');
 
   /*setup stucture*/
+  artDiv.appendChild(artTitle);
+  artDiv.appendChild(artDate);
+  artDiv.appendChild(pContent);
+  pContent.appendChild(p1);
+  pContent.appendChild(p2);
+  pContent.appendChild(p3);
+  artDiv.appendChild(expandButton);
+
+  /*add classes to elements*/
   
+
 
 
 
