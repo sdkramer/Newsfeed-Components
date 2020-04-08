@@ -151,6 +151,7 @@ artDate.textContent = date;
 p1.textContent = firstParagraph;
 p2.textContent = secondParagraph;
 p3.textContent = thirdParagraph;
+expandButton.textContent = "Click for article";
 
 /*event listener*/
 expandButton.addEventListener('click', event => {
