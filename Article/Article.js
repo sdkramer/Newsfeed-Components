@@ -131,6 +131,8 @@ function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdPar
   const p3 = document.createElement('p');
   const expandButton = document.createElement('span');
 
+  debugger
+
   /*setup stucture*/
   artDiv.appendChild(artTitle);
   artDiv.appendChild(artDate);
@@ -141,6 +143,9 @@ function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdPar
   artDiv.appendChild(expandButton);
 
   /*add classes to elements*/
+artDiv.classList.add('article');
+artDiv.classList.add('date');
+expandButton.classList.add('expandButton');
 
 
 
@@ -151,3 +156,5 @@ return artDiv
 
 }
 
+const testArt = makeArticles({title: 'foo', date: 'today', firstParagraph:'hi', secondParagraph: 'hey', thirdParagraph: 'yey'});
+articles.appendChild(testArt);
