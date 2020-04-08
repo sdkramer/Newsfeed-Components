@@ -98,7 +98,9 @@ const data = [
 
     <span class='expandButton'></span>
   </div>
+*/
 
+/*
   Hint: You will need to use createElement more than once here!
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
@@ -120,7 +122,15 @@ const articles = document.querySelector('.articles');
 function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdParagraph}) {
 
   /*instantiate elements*/
+  const artDiv = document.createElement('div');
+  const artTitle = document.createElement('h2');
+  const artDate = document.createElement('p');
+  const p1 = document.createElement('p');
+  const p2 = document.createElement('p');
+  const p3 = document.createElement('p');
 
+  /*setup stucture*/
+  
 
 
 
