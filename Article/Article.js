@@ -119,7 +119,7 @@ const data = [
 const articles = document.querySelector('.articles');
 
 /*create function*/
-function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdParagraph}) {
+function makeArticles ({title, date, firstParagraph, secondParagraph, thirdParagraph}) {
 
   /*instantiate elements*/
   const artDiv = document.createElement('div');
@@ -139,10 +139,10 @@ function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdPar
   pContent.appendChild(p2);
   pContent.appendChild(p3);
   artDiv.appendChild(expandButton);
-
+console.log(artDiv)
   /*add classes to elements*/
 artDiv.classList.add('article');
-artDiv.classList.add('date');
+artDate.classList.add('date');
 expandButton.classList.add('expandButton');
 
 /*set text content*/
@@ -153,17 +153,23 @@ p2.textContent = secondParagraph;
 p3.textContent = thirdParagraph;
 
 /*event listener*/
-expandButton.addEventListener('click', (event) => {
-  artDiv.classList.toggle('article-open');
+expandButton.addEventListener('click', event => {
+  artDiv.classList.toggle('article-open')
 })
 
 
 
 
 
-return artDiv
+return artDiv;
 
 }
 
-const testArt = makeArticles({title: 'foo', date: 'today', firstParagraph:'hi', secondParagraph: 'hey', thirdParagraph: 'yey'});
-articles.appendChild(testArt);
+// console.log(makeArticles({}))
+// const testArt = makeArticles({title: 'foo', date: 'today', firstParagraph:'hi', secondParagraph: 'hey', thirdParagraph: 'yey'});
+// articles.appendChild(testArt);
+
+/**map over data and append to DOM*/
+const allArticles = data.map(dataItem => makeArticles(dataItem))
+
+allArticles.forEach(artElement => {articles.appendChild(artElement)})
