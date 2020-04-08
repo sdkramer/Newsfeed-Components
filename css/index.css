@@ -78,7 +78,7 @@ body {
   color: grey;
   cursor: pointer;
   transform: translate(-50%);
-  background-color: white;
+  background-color: gainsboro;
 }
 .article-open {
   height: 400px;
