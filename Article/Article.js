@@ -141,13 +141,13 @@ function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdPar
   artDiv.appendChild(expandButton);
 
   /*add classes to elements*/
-  
 
 
 
 
 
 
+return artDiv
 
 }
 
