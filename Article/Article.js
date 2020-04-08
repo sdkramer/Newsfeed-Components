@@ -131,8 +131,6 @@ function makeArticles = ({title, date, firstParagraph, secondParagraph, thirdPar
   const p3 = document.createElement('p');
   const expandButton = document.createElement('span');
 
-  debugger
-
   /*setup stucture*/
   artDiv.appendChild(artTitle);
   artDiv.appendChild(artDate);
@@ -154,6 +152,10 @@ p1.textContent = firstParagraph;
 p2.textContent = secondParagraph;
 p3.textContent = thirdParagraph;
 
+/*event listener*/
+expandButton.addEventListener('click', (event) => {
+  artDiv.classList.toggle('article-open');
+})
 
 
 
