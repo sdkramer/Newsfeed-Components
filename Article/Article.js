@@ -169,7 +169,7 @@ function makeArticles ({title, date, firstParagraph, secondParagraph, thirdParag
   pContent.appendChild(p2);
   pContent.appendChild(p3);
   artDiv.appendChild(expandButton);
-console.log(artDiv)
+// console.log(artDiv)
   /*add classes to elements*/
 artDiv.classList.add('article');
 artDate.classList.add('date');
